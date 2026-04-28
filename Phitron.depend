@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1775836258 source:c:\edu-c\phitron\main.c
+	<stdlib.h>
+	<stdio.h>
+	<stdlib.h>
+
