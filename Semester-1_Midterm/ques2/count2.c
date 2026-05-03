@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <ctype.h> 
+#include <ctype.h>
 
 int main()
 {
-    char str[101];
+    char str[100001];
     scanf("%s", str);
     for (int i = 0; str[i] != '\0'; i++)
     {
