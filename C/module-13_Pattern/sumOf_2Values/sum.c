@@ -13,7 +13,7 @@ int main()
     int x;
     scanf("%d", &x);
 
-    int flag=100; //any value
+    int flag=0; //any value
 
     for (int i = 0; i < n; i++)
     {
