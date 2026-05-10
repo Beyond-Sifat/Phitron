@@ -1,24 +1,44 @@
-#include <stdio.h>
+// #include <stdio.h>
 
-void fun(int a[])
+// void fun(int a[])
+// {
+//     a[1] = 200;
+// }
+// int main()
+// {
+
+//     int a[5] = {1, 2, 3, 4, 5};
+//     for (int i = 0; i < 5; i++)
+//     {
+//         printf("%d ", a[i]);
+//     }
+//     printf("\n");
+//     fun(a);
+//     for (int i = 0; i < 5; i++)
+//     {
+
+//         printf("%d ", a[i]);
+//     }
+
+//     return 0;
+// }
+
+#include <stdio.h>
+void fun(int a[], int n)
 {
-    a[1] = 200;
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", a[i]);
+    }
 }
 int main()
 {
-
-    int a[5] = {1, 2, 3, 4, 5};
-    for (int i = 0; i < 5; i++)
-    {
-        printf("%d ", a[i]);
+    int n;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++){
+        scanf("%d", &a[i]);
     }
-    printf("\n");
-    fun(a);
-    for (int i = 0; i < 5; i++)
-    {
-
-        printf("%d ", a[i]);
-    }
-
+    fun(a,n);
     return 0;
 }
