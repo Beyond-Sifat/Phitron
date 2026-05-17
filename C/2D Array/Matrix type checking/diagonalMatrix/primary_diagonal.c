@@ -45,9 +45,6 @@
 //     return 0;
 // }
 
-
-
-
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -64,7 +61,6 @@ int main()
             scanf("%d ", &a[i][j]);
         }
     }
-
 
     bool is_diagonal = true;
     if (r == c)
@@ -84,8 +80,13 @@ int main()
                     {
                         is_diagonal = false;
                         printf("This is not a primary diagonal matrix");
+                        break;
                     }
                 }
+            }
+            if (is_diagonal == false)
+            {
+                break;
             }
         }
         if (is_diagonal == true)

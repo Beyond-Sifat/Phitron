@@ -38,6 +38,10 @@ int main()
                     }
                 }
             }
+            if (is_diagonal == false)
+            {
+                break;
+            }
         }
         if (is_diagonal == true)
         {
