@@ -1,12 +1,18 @@
 #include <iostream>
+using namespace std;
 int main()
 {
-    std::cout << "Hello World" <<"\n";
 
-    int x = 10;
-    std::cout << x <<"\n";
-    char a = 'A';
-    double d = 12.12;
-std:: cout << a << std:: endl << d; //std:: endl -> new line
+    int x;
+    char a;
+    cin >> x >> a;
+    cout << x << " " << a << endl;
+
+    cout <<(int)a <<endl;  //typecasting
+
+    int b;
+    while(cin >> b){  //EOF
+        cout << b << endl;
+    }
     return 0;
 }
