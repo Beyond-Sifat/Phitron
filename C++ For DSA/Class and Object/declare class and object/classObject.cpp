@@ -30,7 +30,7 @@ int main()
     //-----------------------------------------------------------------
     //--------------Student 3-------------------
     //-----------------------------------------------------------------
-    cin.getline(s3.name, 100);
+    cin.getline(s3.name, 100); // Read a character string, including spaces
     cin >> s3.age >> s3.marks;
     cout << s2.name << " " << s2.age << " " << s2.marks << endl;
     cout << s3.name << " " << s3.age << " " << s3.marks << endl;
