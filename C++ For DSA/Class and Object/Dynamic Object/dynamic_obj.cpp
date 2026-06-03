@@ -26,7 +26,9 @@ int main()
 
     Student s1(1, 10, 85.5);
     Student *s2 = fun();
+    Student *john = new Student(3, 10, 90.0);
     cout << s1.roll << " " << s1.cls << " " << s1.marks << endl;
     cout << s2->roll << " " << s2->cls << " " << s2->marks << endl;
+    cout << john->roll << " " << john->cls << " " << john->marks << endl;
     return 0;
 }
