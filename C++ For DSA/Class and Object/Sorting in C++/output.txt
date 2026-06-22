@@ -1,0 +1,3 @@
+Before sorting: 10 50 30 20 40 
+After sorting: 10 20 30 40 50 
+After sorting in descending order: 50 40 30 20 10 
