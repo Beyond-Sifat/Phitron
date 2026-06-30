@@ -43,5 +43,18 @@ int main()
     }
 
     cout<<mn.name<<" "<<mn.roll<<" "<<mn.marks<<endl;
+
+
+    Student max;
+    max.marks = INT_MIN;
+    for (int i = 0; i < n; i++)
+    {
+
+        if (a[i].marks > max.marks)
+        {
+            max = a[i];
+        }
+    }
+    cout<<max.name<<" "<<max.roll<<" "<<max.marks<<endl;
     return 0;
 }
