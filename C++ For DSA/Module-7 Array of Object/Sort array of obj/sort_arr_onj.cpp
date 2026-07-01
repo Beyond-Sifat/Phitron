@@ -8,13 +8,29 @@ public:
     int marks;
 };
 
-//custom compare function
-bool cmp(Student l, Student r){
-    if(l.marks<r.marks){
+// custom compare function
+bool cmp(Student l, Student r)
+{
+    if (l.marks < r.marks)
+    {
         return true;
-    }else{
+    }
+    else if (l.marks > r.marks)
+    {
         return false;
     }
+    else
+    {
+        // if(l.roll<r.roll){
+        //     return true;
+        // }else{
+        //     return false;
+        // }
+        return l.roll < r.roll;
+    }
+
+    //=============SHORTCUT============
+    // return l.roll > r.roll;
 }
 
 int main()
@@ -30,11 +46,11 @@ int main()
         cin >> a[i].roll >> a[i].marks;
     }
 
-    sort(a,a+n,cmp);
+    sort(a, a + n, cmp);
     for (int i = 0; i < n; i++)
     {
 
         cout << a[i].name << " " << a[i].roll << " " << a[i].marks << endl;
-    }    
+    }
     return 0;
 }
