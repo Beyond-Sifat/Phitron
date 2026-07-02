@@ -13,16 +13,21 @@ public:
         (*this).roll = roll;
     }
     void hello(){
-        cout<<"Hello"<<endl;
+        cout<<"Hello from "<<name<<endl;
     }
 };
 int main()
 {
     Student sakib("Sakib Ahmed",20);
+    sakib.hello();
+    Student rakib("Rakib Hasan",15);
+    rakib.hello();
+
+
+    
     cout<<sakib.name<<endl;
     cout<<sakib.roll<<endl;
     // cout<<sakib.hello<<endl;
 
-    sakib.hello();
     return 0;
 }
