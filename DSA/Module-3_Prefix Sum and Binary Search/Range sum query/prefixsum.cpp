@@ -8,29 +8,29 @@ int main()
     int n, q;
     cin >> n >> q;
 
-    vector<int> a(n + 1);
+    vector<long long int> a(n + 1);
     for (int i = 1; i <= n; i++)
     {
         cin >> a[i];
     }
 
-    vector<int> pre(n + 1);
+    vector<long long int> pre(n + 1);
     pre[1] = a[1];
     for (int i = 2; i <= n; i++)
     {
         pre[i] = pre[i - 1] + a[i];
     }
 
-    for (int i = 1; i <= n; i++)
-    {
-        cout << pre[i] << " ";
-    }
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     cout << pre[i] << " ";
+    // }
     while (q--)
     {
         int l, r;
         cin >> l >> r;
 
-        int sum = 0;
+        long long int sum = 0;
         if (l == 1)
         {
             sum = pre[r];
