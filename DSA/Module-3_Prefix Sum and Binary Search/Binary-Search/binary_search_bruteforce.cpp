@@ -1,35 +1,83 @@
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+
+//     int n, q, i;
+//     cin >> n >> q;
+//     vector<int> a(n);
+//     for (i = 0; i < n; i++)
+//     {
+//         cin >> a[i];
+//     }
+//     while (q--)
+//     {
+//         int x;
+//         cin >> x;
+//         int flag = 0;
+//         for (int z:a)
+//         {
+//             if (z == x)
+//             {
+//                 flag = 1;
+//             }
+//         }
+//         if (flag == 1)
+//         {
+//             cout << "found" << endl;
+//         }
+//         else
+//         {
+//             cout << "not found" << endl;
+//         }
+//     }
+//     return 0;
+// }
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
 
-    int n, q, i;
-    cin >> n >> q;
+    int n;
+    cin >> n;
     vector<int> a(n);
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         cin >> a[i];
     }
-    while (q--)
+
+    int x;
+    cin >> x;
+    int flag = 0;
+
+    int l = 0;
+    int r = n + 1;
+
+    while (l <= r)
     {
-        int x;
-        cin >> x;
-        int flag = 0;
-        for (int z:a)
+        int mid = (l + r) / 2;
+        if (a[mid] == x)
         {
-            if (z == x)
-            {
-                flag = 1;
-            }
+            flag = 1;
+            break;
         }
-        if (flag == 1)
+        else if (a[mid] > x)
         {
-            cout << "found" << endl;
+            r = mid - 1;
         }
         else
         {
-            cout << "not found" << endl;
+            l = mid + 1;
         }
+    }
+    if (flag == 1)
+    {
+        cout << "found" << endl;
+    }
+    else
+    {
+        cout << "not found" << endl;
     }
     return 0;
 }
